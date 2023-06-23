@@ -16,6 +16,8 @@ import StyleSheet from './components/StyleSheet';
 import Inline from './components/Inline';
 import './appStyle.css'
 import styles from './components/appStyles.modules.css'
+import Forms from './components/Forms';
+import LifeCycleA from './components/LifeCycleA';
 
 
 function MyButton() {
@@ -37,9 +39,11 @@ function MyButton() {
       //Inne pobieranie stylow linijka 40/41
       return(
         <div className="App">
-          <h1 className='error'>Error</h1> 
+          <LifeCycleA/>
+        {/*  <h1 className='error'>Error</h1> 
           <h1 className={styles.success}>Success</h1>
-            <Inline/>
+      <Inline/> */}
+           {/*<Forms/>*/}
           {/*<StyleSheet /> */}
           {/* <StyleSheet primary ={true}/>*/}
           {/* <NameList /> */}
