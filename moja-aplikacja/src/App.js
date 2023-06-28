@@ -18,6 +18,8 @@ import './appStyle.css'
 import styles from './components/appStyles.modules.css'
 import Forms from './components/Forms';
 import LifeCycleA from './components/LifeCycleA';
+import FragmentDemo from './components/Fragments';
+import Table from './components/Table'
 
 
 function MyButton() {
@@ -39,7 +41,9 @@ function MyButton() {
       //Inne pobieranie stylow linijka 40/41
       return(
         <div className="App">
-          <LifeCycleA/>
+          <Table/>
+         {/* <FragmentDemo/> */}
+         {/* <LifeCycleA/> */}
         {/*  <h1 className='error'>Error</h1> 
           <h1 className={styles.success}>Success</h1>
       <Inline/> */}

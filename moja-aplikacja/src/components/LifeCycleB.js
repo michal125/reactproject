@@ -19,6 +19,20 @@
      componentDidMount(){
          console.log('LifeCycleB componentDidMount')
      }
+
+     shouldComponentUpdate(){
+        console.log('object')
+    }
+    
+    getSnapshotBeforeUpdate(prevProps, prevState){
+        console.log('LifeCycleB getSnapshotBeforeUpdate')
+        return null
+    }
+
+    componentDidUpdate(){
+        console.log('LifecycleB componentDidUpdate')
+    }
+
      render() {
              console.log('LifcycleB render')
              return <div>Lifcycle B</div>
