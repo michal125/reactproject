@@ -20,6 +20,8 @@ import Forms from './components/Forms';
 import LifeCycleA from './components/LifeCycleA';
 import FragmentDemo from './components/Fragments';
 import Table from './components/Table'
+import PureComp from './components/PureComp';
+import ParentComp from './components/ParentComp';
 
 
 function MyButton() {
@@ -41,7 +43,8 @@ function MyButton() {
       //Inne pobieranie stylow linijka 40/41
       return(
         <div className="App">
-          <Table/>
+          <ParentComp/>
+          {/*<Table/> */}
          {/* <FragmentDemo/> */}
          {/* <LifeCycleA/> */}
         {/*  <h1 className='error'>Error</h1> 
