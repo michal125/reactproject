@@ -22,6 +22,9 @@ import FragmentDemo from './components/Fragments';
 import Table from './components/Table'
 import PureComp from './components/PureComp';
 import ParentComp from './components/ParentComp';
+import RefsDemo from './components/RefsDemo';
+import FocusInput from './components/FocusInput';
+import FRParentInput from './components/FRParentInput'
 
 
 function MyButton() {
@@ -43,7 +46,10 @@ function MyButton() {
       //Inne pobieranie stylow linijka 40/41
       return(
         <div className="App">
-          <ParentComp/>
+          <FRParentInput />
+          {/*<FocusInput /> */}
+          {/*<RefsDemo/> */}
+          {/*<ParentComp/> */}
           {/*<Table/> */}
          {/* <FragmentDemo/> */}
          {/* <LifeCycleA/> */}
