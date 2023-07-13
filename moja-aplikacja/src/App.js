@@ -29,6 +29,11 @@ import Hero from './components/Hero'
 import ErrorBoundary from './components/ErrorBoundary';
 import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
+import User from './components/User';
+import ComponentC from './components/ComponentC';
+import { UserProvider } from './components/userContext';
 
 
 function MyButton() {
@@ -50,8 +55,15 @@ function MyButton() {
       //Inne pobieranie stylow linijka 40/41
       return(
         <div className="App">
-          <ClickCounter/>
-          <HoverCounter/>
+          <UserProvider value="michal">
+            <ComponentC />
+          </UserProvider>
+         {/* <ClickCounterTwo /> */}
+          {/*<HoverCounterTwo /> /*}
+          <User name={(isLoggedIn) =>  isLoggedIn ? "Michal": "Guest"}/>
+          {/*<User render={(isLoggedIn) =>  isLoggedIn ? "Michal": "Guest"}/>*/}
+          {/*<ClickCounter/> */}
+          {/*<HoverCounter/> */}
         {/*}  <ErrorBoundary>
             <Hero heroName="Batman" />
           </ErrorBoundary>
