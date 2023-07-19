@@ -34,6 +34,8 @@ import HoverCounterTwo from './components/HoverCounterTwo';
 import User from './components/User';
 import ComponentC from './components/ComponentC';
 import { UserProvider } from './components/userContext';
+import PostList from './components/PostList';
+import PostForm from './PostForm';
 
 
 function MyButton() {
@@ -55,9 +57,11 @@ function MyButton() {
       //Inne pobieranie stylow linijka 40/41
       return(
         <div className="App">
-          <UserProvider value="michal">
+          <PostForm />
+         {/*<PostList /> */}
+         {/*} <UserProvider value="michal">
             <ComponentC />
-          </UserProvider>
+      </UserProvider> */}
          {/* <ClickCounterTwo /> */}
           {/*<HoverCounterTwo /> /*}
           <User name={(isLoggedIn) =>  isLoggedIn ? "Michal": "Guest"}/>
